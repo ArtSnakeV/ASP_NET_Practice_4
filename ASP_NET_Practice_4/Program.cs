@@ -19,7 +19,7 @@ builder.Services.AddTransient<AnimalService>();
 builder.Services.AddTransient<IAnimalSender, JSONAnimalSender>();
 
 //builder.Services.AddTransient<IAnimalsSender, HtmlAnimalsSender>();
-//builder.Services.AddTransient<IAnimalsSender, JSONAnimalsSender>();
+// Still under development //builder.Services.AddTransient<IAnimalsSender, JSONAnimalsSender>(); 
 
 
 
@@ -33,8 +33,8 @@ builder.Services.AddTransient<IFigure, Pentagon>();
 builder.Services.AddTransient<FiguresService>();
 
 //builder.Services.AddTransient<IFiguresSender, HtmlFiguresSender>(); // Saving to HTML
-//builder.Services.AddTransient<IFiguresSender, JsonFiguresSender>(); // Displaying as JSON file
-builder.Services.AddTransient<IFiguresSender, SaveFigureXML>(); // Saving figure to file
+builder.Services.AddTransient<IFiguresSender, JsonFiguresSender>(); // Displaying as JSON file
+// Still under development//builder.Services.AddTransient<IFiguresSender, SaveFigureXML>(); // Saving figure to file 
 
 
 
